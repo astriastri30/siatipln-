@@ -35,7 +35,7 @@
                                         <div class="form-group form-inline">
                                             <label for="inlineinput" class="col-md-6 ">Kondisi</label>
                                             <label for="" class="col-md-2 ">:</label>
-                                            {{$detail_pengecekan_jaringan->kondisi}}
+                                            {{$detail_pengecekan_jaringan                          ->kondisi}}
                                             <div for="inlineinput" class="col-md-4 ">
                                             </div>
                                         </div>    

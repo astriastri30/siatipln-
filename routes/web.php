@@ -70,6 +70,8 @@ Route::get('/home', 'HomeController@index')->name('home');
         Route::get('/masterti', 'MasterTiController@index')->name('view.masterti');
         Route::post('/masterti', 'MasterTiController@store')->name('store.masterti');
         Route::patch('/masterti', 'MasterTiController@update')->name('update.masterti');
+
+        Route::get('/indexpengaduan', 'PengaduanKerusakanController@index')->name('view.pengaduan');
     });
     // Route::get('/logout', 'HomeController@logout')->name('logout');
 

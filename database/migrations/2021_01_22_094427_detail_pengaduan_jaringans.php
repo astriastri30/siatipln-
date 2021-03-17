@@ -14,6 +14,7 @@ class DetailPengaduanJaringans extends Migration
             $table->string('id_master_jaringan', 5);
             $table->string('status_pengaduan', 10);
             $table->text('keterangan');
+            $table->string('foto', 30);
 
             $table->timestamp('failed_at')->useCurrent();
             $table->primary('id_pengaduan_jaringan');
