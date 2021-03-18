@@ -79,7 +79,7 @@
 								</a>
 						</li>
 						<li class="nav-item">
-							<a href="/indexpengaduan">
+							<a href="/pengaduan">
 								<i class="fas fa-pen-square"></i>
 								<p>Pengaduan Kerusakan </p>
 								</a>

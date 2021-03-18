@@ -105,7 +105,7 @@
                             </a>
 						</li> 
 						<li class="nav-item">
-							<a href="#">
+							<a href="/rekappengaduan">
 								<i class="fas fa-clipboard-list"></i>
 								<p>Pengaduan Kerusakan</p>
                             </a>
@@ -119,12 +119,12 @@
 							<div class="collapse" id="forms">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="forms/forms.html">
+										<a href="/rekapasetti">
 											<span class="sub-item">Rekap Pengecekan Aset TI</span>
 										</a>
 									</li>
 									<li>
-										<a href="forms/forms.html">
+										<a href="/rekapasetjaringan">
 											<span class="sub-item">Rekap Pengecekan Aset Jaringan</span>
 										</a>
 									</li>

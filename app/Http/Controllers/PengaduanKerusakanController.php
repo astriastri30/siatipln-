@@ -32,4 +32,13 @@ class PengaduanKerusakanController extends Controller
         return view('pengaduan.view_pengaduan_jaringan', compact('master_aset_jaringan','pengaduan_jaringan','detail_pengaduan_jaringan'));
     }
 }
-}
+    public function addpengaduanti(){
+        return view('pengaduan.add_pengaduan_ti');
+    }
+
+    public function addpengaduanjaringan(){
+        return view('pengaduan.add_pengaduan_jaringan');
+    }
+
+
+} 

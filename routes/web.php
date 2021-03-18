@@ -56,11 +56,15 @@ Route::get('/home', 'HomeController@index')->name('home');
         Route::get('/kodeQR/cetakQR/cetakAll')->name('view.qr');
         Route::get('/kodeQR/cetakQR/details/{no_seri}', 'CetakQRController@indexdetailaset')->name('detail.cetakqr');
         Route::get('/kodeQR/cetakQR/detailsjaringan/{no_seri}', 'CetakQRController@indexdetailjaringan')->name('detailjaringan.cetakqr');
-       
+        Route::get('/kodeQR/cetakQR/{no_seri}/{status}', 'CetakQRController@printQR')->name('qr.print');
+
         Route::get('/daftarpegawai', 'UserController@viewDaftarPegawai')->name('view.daftar_pegawai');
         Route::post('/daftarpegawai', 'UserController@store')->name('store.daftar_pegawai');
 
-        Route::get('/kodeQR/cetakQR/{no_seri}/{status}', 'CetakQRController@printQR')->name('qr.print');
+        Route::get('/rekapasetti', 'RekapAsetTiController@index')->name('view.rekapti');
+        Route::get('/rekapasetjaringan', 'RekapAsetJaringanController@index')->name('view.rekapjaringan');
+      
+        Route::get('/rekappengaduan', 'RekapPengaduanController@index')->name('view.rekappengaduan');
 
     });
     Route::group(['middleware' => ['role:2']], function () {
@@ -71,7 +75,12 @@ Route::get('/home', 'HomeController@index')->name('home');
         Route::post('/masterti', 'MasterTiController@store')->name('store.masterti');
         Route::patch('/masterti', 'MasterTiController@update')->name('update.masterti');
 
-        Route::get('/indexpengaduan', 'PengaduanKerusakanController@index')->name('view.pengaduan');
+        Route::get('/pengaduan', 'PengaduanKerusakanController@index')->name('index.pengaduan');
+        Route::post('/pengaduan/view', 'PengaduanKerusakanController@kelompokaset')->name('view.pengaduan');
+        Route::get('/pengaduan/view/addti', 'PengaduanKerusakanController@addpengaduanti')->name('add.pengaduan_ti');
+        Route::get('/pengaduan/view/addjaringan', 'PengaduanKerusakanController@addpengaduanjaringan')->name('add.pengaduan_jaringan');
+        
+        
     });
     // Route::get('/logout', 'HomeController@logout')->name('logout');
 
